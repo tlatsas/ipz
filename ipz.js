@@ -5,13 +5,13 @@ var server = http.createServer(function(req, res) {
         switch (req.headers.accept) {
             case 'application/json':
                 res.writeHead(200, {'content-type': 'application/json'});
-                res.write(JSON.stringify({'ip': req.connection.remoteAddress}));
+                res.write(JSON.stringify({'ip': req.headers['x-forwarded-for']}));
                 res.end();
                 break;
 
             default:
                 res.writeHead(200, {'content-type': 'text/plain' });
-                res.write(req.connection.remoteAddress);
+                res.write(req.headers['x-forwarded-for']);
                 res.end();
         }
     }
