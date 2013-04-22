@@ -20,7 +20,6 @@ Nginx
 -----
 Sample configuration using nginx. It assumes that the application listens on port 8080.
 
-    ```
     server {
         listen 80;
         server_name ip.example.com;
@@ -34,7 +33,6 @@ Sample configuration using nginx. It assumes that the application listens on por
             proxy_redirect off;
         }
     }
-    ```
 
 License
 -------
