@@ -1,0 +1,12 @@
+[Unit]
+Description=ipz Node.js application
+
+[Service]
+Type=simple
+User=nobody
+Group=nobody
+PIDFile=/run/ipz.pid
+ExecStart=/usr/bin/node /srv/webapps/ipz/ipz.js
+
+[Install]
+WantedBy=multi-user.target
