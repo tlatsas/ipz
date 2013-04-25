@@ -3,7 +3,7 @@ Ipz
 A very simple service that shows your public ip address.
 You can test it on [heroku](http://ipz.herokuapp.com/).
 
-Ipz can also return your ip in JSON format.
+Ipz can also return your ip and hostname (if applicable) in JSON format.
 
 Response
 --------
@@ -13,7 +13,14 @@ Using CURL:
 
 will respond with:
 
-    {"ip":"your ip here"}
+    {"ip": "your ip here"}
+
+or:
+
+    {
+        "ip": "79.167.55.15",
+        "hostname": "foo"
+    }
 
 
 Nginx
@@ -34,6 +41,11 @@ Sample configuration using nginx. It assumes that the application listens on por
         }
     }
 
+Run using Systemd
+-----------------
+See ipz.service
+
+
 License
 -------
 Too basic stuff.. do whatever you want =)
@@ -41,4 +53,4 @@ Too basic stuff.. do whatever you want =)
 
 Authors
 -------
-2012 Tasos Latsas
+Tasos Latsas
