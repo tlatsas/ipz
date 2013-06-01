@@ -6,7 +6,7 @@ Type=simple
 User=nobody
 Group=nobody
 PIDFile=/run/ipz.pid
-ExecStart=/usr/bin/node /srv/webapps/ipz/ipz.js
+ExecStart=/usr/bin/node /srv/webapps/ipz/bin/ipz
 
 [Install]
 WantedBy=multi-user.target
