@@ -1,1 +1,1 @@
-web: node ipz.js
+web: node bin/ipz
