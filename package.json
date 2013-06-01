@@ -1,7 +1,7 @@
 {
   "name": "ipz",
   "description": "a simple application that shows your ip address and hostname",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "bin": {
     "ipz": "./bin/ipz"
   },
