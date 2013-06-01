@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-var server = require('../node/ipz');
+var server = require('../lib/ipz');
 var port = process.env.PORT || 8080
 server.ipz.listen(port);
