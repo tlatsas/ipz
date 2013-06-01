@@ -43,12 +43,12 @@ Sample configuration using nginx. It assumes that the application listens on por
 
 Run using Systemd
 -----------------
-See ipz.service
+See `ipz.service` in the systemd folder.
 
 
 License
 -------
-Too basic stuff.. do whatever you want =)
+See `LICENSE`.
 
 
 Authors
