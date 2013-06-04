@@ -2,8 +2,15 @@ Ipz
 ---
 A very simple service that shows your public ip address.
 You can test it on [heroku](http://ipz.herokuapp.com/).
-
 Ipz can also return your ip and hostname (if applicable) in JSON format.
+
+
+Install
+-------
+Ipz can be installed using npm:
+
+    $ npm install ipz
+
 
 Response
 --------
@@ -40,6 +47,7 @@ Sample configuration using nginx. It assumes that the application listens on por
             proxy_redirect off;
         }
     }
+
 
 Run using Systemd
 -----------------
